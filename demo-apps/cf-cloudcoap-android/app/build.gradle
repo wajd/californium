@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jaredsburrows.license'
+
+repositories {
+    mavenLocal()
+    maven {
+        url 'https://repo.eclipse.org/content/repositories/californium/'
+    }
+}
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "org.eclipse.californium.examples.cloudcoap"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        merge 'about.html'
+        pickFirst 'edl-v10.html'
+        pickFirst 'epl-v10.html'
+        pickFirst 'notice.html'
+        pickFirst 'META-INF/INDEX.LIST'
+        pickFirst 'META-INF/io.netty.versions.properties'
+        pickFirst 'LICENSE-2.0.txt'
+        pickFirst '3rd-party/*'
+        exclude '**/*.jks'
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:preference-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    if (!gradle.startParameter.taskNames.contains("licenseDebugReport")) {
+        // exclude californium from android license scan
+        implementation 'com.google.code.gson:gson:2.8.2'
+        implementation 'org.eclipse.californium:californium-core:2.0.0-SNAPSHOT'
+        implementation 'org.eclipse.californium:element-connector-tcp:2.0.0-SNAPSHOT'
+        implementation 'org.eclipse.californium:scandium:2.0.0-SNAPSHOT'
+        implementation 'org.eclipse.californium:demo-certs:2.0.0-SNAPSHOT'
+        // using logback as slf4j implementation
+        // implementation 'com.github.tony19:logback-android:1.1.1-11'
+        // using android Log as slf4j implementation - use for development only !
+        implementation 'org.eclipse.californium:slf4j-android:2.0.0-SNAPSHOT'
+    }
+}

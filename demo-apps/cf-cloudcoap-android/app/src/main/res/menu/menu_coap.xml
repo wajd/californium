@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.eclipse.californium.examples.CoapActivity">
+    <group>
+        <item android:id="@+id/action_info" android:title="@string/action_info"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:orderInCategory="1" app:showAsAction="always" android:checkable="true" />
+        <item android:id="@+id/action_reset_communication" android:title="@string/action_reset_communication"
+            android:icon="@android:drawable/ic_menu_rotate"
+            android:orderInCategory="2" app:showAsAction="always" />
+        <item android:id="@+id/action_reset_statistic" android:title="@string/action_reset_statistic"
+            android:icon="@android:drawable/ic_menu_delete"
+            android:orderInCategory="3" app:showAsAction="always" android:checkable="true" />
+    </group>
+    <group>
+        <item android:id="@+id/action_legal" android:title="@string/action_legal"
+            android:orderInCategory="4" app:showAsAction="never" />
+        <item android:id="@+id/action_reset_id" android:title="@string/action_reset_id"
+            android:orderInCategory="5" app:showAsAction="never" />
+        <item android:id="@+id/action_reset_all" android:title="@string/action_reset_all"
+            android:orderInCategory="6" app:showAsAction="never" />
+        <item android:id="@+id/action_dtls" android:title="@string/action_dtls"
+            android:orderInCategory="7" app:showAsAction="never" android:checkable="true" />
+        <item android:id="@+id/action_dns" android:title="@string/action_dns"
+            android:orderInCategory="8" app:showAsAction="never" android:checkable="true" />
+        <item android:id="@+id/action_start" android:title="@string/action_start"
+            android:orderInCategory="9" app:showAsAction="never" android:checkable="true" />
+    </group>
+</menu>

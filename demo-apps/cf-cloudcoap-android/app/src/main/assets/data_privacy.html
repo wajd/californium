@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+    <title>Data Privacy Statement</title>
+</head>
+<body lang="EN-US">
+<h2>CloudCoAP-App</h2>
+
+<p><em>May 14, 2019</em></p>
+<h3>Intended Purpose of the CloudCoAP-App</h3>
+
+<p>
+    The CloudCoAP-App demonstrates the usage of CoAP in the internet.
+    It contains implementations of
+<ul>
+    <li>
+        <a href="https://tools.ietf.org/html/rfc6347">DTLS 1.2 / RFC 6347</a>,
+    </li>
+    <li>
+        <a href="https://tools.ietf.org/html/rfc7252">CoAP / RFC 7252</a>,
+    </li>
+    <li>
+        <a href="https://tools.ietf.org/html/rfc7959">CoAP Blockwise/ RFC 7959</a>, and
+    </li>
+    <li>
+        <a href="https://tools.ietf.org/html/draft-ietf-tls-dtls-connection-id-05">DTLS 1.2
+            Connection
+            ID</a>.
+    </li>
+</ul>
+</p>
+<p>
+    Assuming to use a CoAP server for the communication, which supports also the
+    "DTLS 1.2 Connection ID", it demonstrates connection less encryption.
+    The device may even change from cellular communication to WiFi
+    without losing the encryption context. That results in less DTLS handshakes.
+</p>
+<p>
+    The App may be used with your own CoAP server implementation and may be adapted
+    to your needs. Check the
+    <a href="https://github.com/eclipse/californium">Eclipse Californium Project</a>.
+    for more information.
+</p>
+
+<h3>Usage of personalized data</h3>
+<p>
+    The app doesn't use personalized data.
+</p>
+<h3>Usage of personalizable data</h3>
+<p>
+    The App uses IP/UDP and requires therefore an ip-address and port.
+    Depending on your ISP, that may be used to identify you. The other
+    IDs mention below may be used to related the messages with previous
+    ip-addresses and ports.
+</p>
+<p>
+    If the App uses (D)TLS encryption, a session ID and a connection ID is used to
+    identify the encryption context. To change these IDs, use the "Reset All"
+    function in the menu. That will trigger a new handshake and assign new IDs to
+    the new encryption context. The encryption is also based on long term credentials,
+    e.g. x.509 certificates. These credentials can not be changed without rebuilding this
+    App.
+</p>
+<p>
+    If the "Request Statistic" mode is used, a random UUID is used as device ID to
+    related the requests from your device to create the communication statistic.
+    To change that device ID use the "Reset Device ID" or "Reset All" function
+    in the menu. The request itself send that device ID and the timestamp of the
+    request. It receives as response the timestamps of up to the last 8 requests
+    received with that device ID.
+</p>
+
+</body>
+</html>

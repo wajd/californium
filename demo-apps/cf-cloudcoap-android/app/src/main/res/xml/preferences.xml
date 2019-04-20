@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="PREF_DESTINATION_HOST"
+        android:title="@string/pref_host_title"
+        android:summary="@string/pref_host_default"
+        android:dialogTitle="@string/pref_host_title"
+        android:entries="@array/pref_host_entries"
+        android:entryValues="@array/pref_host_entries"
+        android:defaultValue="@string/pref_host_default" />
+
+    <ListPreference
+        android:key="PREF_IP"
+        android:title="@string/pref_ip_title"
+        android:summary="@string/pref_ip_default"
+        android:dialogTitle="@string/pref_ip_title"
+        android:entries="@array/pref_ip_entries"
+        android:entryValues="@array/pref_ip_entries"
+        android:defaultValue="@string/pref_ip_default" />
+
+    <ListPreference
+        android:key="PREF_PROTOCOL"
+        android:title="@string/pref_protocol_title"
+        android:summary="@string/pref_protocol_default"
+        android:dialogTitle="@string/pref_protocol_title"
+        android:entries="@array/pref_protocol_entries"
+        android:entryValues="@array/pref_protocol_entries"
+        android:defaultValue="@string/pref_protocol_default" />
+
+    <ListPreference
+        android:key="PREF_DTLS_MODE"
+        android:title="@string/pref_dtls_mode_title"
+        android:summary="@string/pref_dtls_mode_default"
+        android:dialogTitle="@string/pref_dtls_mode_title"
+        android:entries="@array/pref_dtls_mode_entries"
+        android:entryValues="@array/pref_dtls_mode_values"
+        android:defaultValue="@string/pref_dtls_mode_default_value" />
+
+    <ListPreference
+        android:key="PREF_REQUEST_MODE"
+        android:title="@string/pref_request_mode_title"
+        android:summary="@string/pref_request_mode_default"
+        android:dialogTitle="@string/pref_request_mode_title"
+        android:entries="@array/pref_request_mode_entries"
+        android:entryValues="@array/pref_request_mode_values"
+        android:defaultValue="@string/pref_request_mode_default_value" />
+
+    <ListPreference
+        android:key="PREF_TIMED_REQUEST"
+        android:title="@string/pref_timed_request_title"
+        android:summary="@string/pref_timed_request_default"
+        android:dialogTitle="@string/pref_timed_request_title"
+        android:entries="@array/pref_timed_request_entries"
+        android:entryValues="@array/pref_timed_request_values"
+        android:defaultValue="@string/pref_timed_request_default_value" />
+
+    <SwitchPreferenceCompat
+        android:key="PREF_FILE_LOG"
+        android:title="@string/pref_file_log_title"
+        android:summaryOff="@string/pref_file_log_off"
+        android:summaryOn="@string/pref_file_log_on"
+        android:defaultValue="false"/>
+
+</PreferenceScreen>

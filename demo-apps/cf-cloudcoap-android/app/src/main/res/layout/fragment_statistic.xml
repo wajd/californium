@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".CoapStatisticFragment">
+
+    <TextView
+        android:paddingTop="@dimen/activity_vertical_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textSuccessStatistic"
+        android:textSize="@dimen/text_size_info"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:paddingTop="@dimen/activity_vertical_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textRetriesStatistic"
+        android:textSize="@dimen/text_size_info"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:paddingTop="@dimen/activity_vertical_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textDropsStatistic"
+        android:textSize="@dimen/text_size_info"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:paddingTop="@dimen/activity_vertical_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textFailureStatistic"
+        android:textSize="@dimen/text_size_info"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:paddingTop="@dimen/activity_vertical_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textConnectStatistic"
+        android:textSize="@dimen/text_size_info"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:paddingTop="@dimen/activity_vertical_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textRestartsStatistic"
+        android:textSize="@dimen/text_size_info"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:paddingTop="@dimen/activity_vertical_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textStatisticSummary"
+        android:textSize="@dimen/text_size_info"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:paddingTop="@dimen/activity_vertical_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textNoResponses"
+        android:textSize="@dimen/text_size_info"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:scrollbars="vertical"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:id="@+id/textStatisticLog"
+        android:layout_gravity="center_horizontal"
+        android:textSize="11sp"
+        android:typeface="monospace"
+        android:fontFamily="monospace" />
+
+</LinearLayout>

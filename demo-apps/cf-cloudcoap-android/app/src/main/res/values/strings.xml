@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">Cf-CloudCoap</string>
+    <string name="title_activity_coap">Cf-CloudCoap</string>
+
+    <string name="title_activity_legal">Legal §</string>
+
+    <string name="title_fragment_request">Requests</string>
+    <string name="title_fragment_statistics">Statistics</string>
+    <string name="title_fragment_settings">Settings</string>
+    <string name="title_fragment_android_licenses">Android Open Source Licenses</string>
+    <string name="title_fragment_californium_licenses">Californium Open Source Licenses</string>
+    <string name="title_fragment_data_privacy">Data Privacy</string>
+
+    <string name="label_uri">URI</string>
+    <string name="label_button">GET</string>
+    <string name="label_ok">OK</string>
+
+    <string name="action_info">CoAP Details</string>
+    <string name="action_reset_communication">Reset Communication</string>
+    <string name="action_reset_statistic">Reset Statistic</string>
+    <string name="action_legal">Legal §</string>
+    <string name="action_reset_id">Reset Device ID</string>
+    <string name="action_reset_all">Reset All</string>
+    <string name="action_dtls">DTLS Cache</string>
+    <string name="action_dns">DNS Cache</string>
+    <string name="action_start">Run Local Server</string>
+
+    <string name="state_resolving">resolving hostname ...</string>
+    <string name="state_resolved">resolved ...</string>
+    <string name="state_start">...</string>
+    <string name="state_connecting">connecting ...</string>
+    <string name="state_loading">loading ...</string>
+
+    <string name="txrx">tx: %d bytes, rx: %d bytes</string>
+    <string name="blocks">%d blocks</string>
+    <string name="interval_time_min">%s minutes</string>
+    <string name="disabled">Disabled</string>
+
+    <plurals name="entries">
+        <item quantity="one">(%d entry)</item>
+        <item quantity="other">(%d entries)</item>
+    </plurals>
+
+    <plurals name="retries">
+        <item quantity="one">%d retry</item>
+        <item quantity="other">%d retries</item>
+    </plurals>
+
+    <plurals name="success">
+        <item quantity="one">%d success</item>
+        <item quantity="other">%d successes</item>
+    </plurals>
+
+    <plurals name="losts">
+        <item quantity="one">%d lost response</item>
+        <item quantity="other">%d lost responses</item>
+    </plurals>
+
+    <plurals name="failure">
+        <item quantity="one">%d failure</item>
+        <item quantity="other">%d failures</item>
+    </plurals>
+
+    <plurals name="connect">
+        <item quantity="one">%d connect</item>
+        <item quantity="other">%d connects</item>
+    </plurals>
+
+    <plurals name="restart">
+        <item quantity="one">%d restart</item>
+        <item quantity="other">%d restarts</item>
+    </plurals>
+
+    <plurals name="noresponse">
+        <item quantity="one">no response: %s</item>
+        <item quantity="other">no responses: %s</item>
+    </plurals>
+
+    <string name="sandbox_host">californium.eclipse.org</string>
+    <string name="emulator_host">localhost.emulator</string>
+
+    <string name="pref_host_title">Destination:</string>
+    <string name="pref_host_default">@string/sandbox_host</string>
+
+    <array name="pref_host_entries">
+        <item>@string/sandbox_host</item>
+        <item>localhost</item>
+    </array>
+
+    <string name="ipv4_6">IPv4/IPv6:</string>
+    <string name="ipv6">IPv6</string>
+    <string name="ipv4">IPv4</string>
+
+    <string name="pref_ip_title">IP:</string>
+    <string name="pref_ip_default">@string/ipv4</string>
+
+    <array name="pref_ip_entries">
+        <item>@string/ipv4</item>
+        <item>@string/ipv6</item>
+    </array>
+
+    <string name="pref_protocol_title">Protocol:</string>
+    <string name="pref_protocol_default">coap</string>
+
+    <array name="pref_protocol_entries">
+        <item>coap</item>
+        <item>coaps</item>
+        <item>coap+tcp</item>
+        <item>coaps+tcp</item>
+    </array>
+
+    <string name="pref_dtls_screen_preference">DTLS...</string>
+    <string name="pref_title_dtls_screen_preference">DTLS</string>
+
+    <string name="pref_dtls_mode_title">DTLS:</string>
+    <string name="pref_dtls_mode_default">x.509</string>
+    <string name="pref_dtls_mode_default_value">X509</string>
+
+    <array name="pref_dtls_mode_entries">
+        <item>PreSharedKey</item>
+        <item>RawPublicKey</item>
+        <item>x.509</item>
+    </array>
+
+    <array name="pref_dtls_mode_values">
+        <item>PSK</item>
+        <item>RPK</item>
+        <item>X509</item>
+    </array>
+
+    <string name="pref_request_mode_title">Request Mode:</string>
+    <string name="pref_request_mode_default">Root</string>
+    <string name="pref_request_mode_default_value">ROOT</string>
+
+    <array name="pref_request_mode_entries">
+        <item>Root</item>
+        <item>Discover</item>
+        <item>Request Statistic</item>
+    </array>
+
+    <array name="pref_request_mode_values">
+        <item>ROOT</item>
+        <item>DISCOVER</item>
+        <item>STATISTIC</item>
+    </array>
+
+    <string name="pref_timed_request_title">Timed Requests:</string>
+    <string name="pref_timed_request_default">@string/disabled</string>
+    <string name="pref_timed_request_default_value">0</string>
+
+    <array name="pref_timed_request_entries">
+        <item>@string/disabled</item>
+    </array>
+
+    <string-array name="pref_timed_request_values">
+        <item>0</item>
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+    </string-array>
+
+    <string name="pref_file_log_title">Log File:</string>
+    <string name="pref_file_log_on">ON</string>
+    <string name="pref_file_log_off">OFF</string>
+
+</resources>
